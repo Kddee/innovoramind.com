@@ -10,6 +10,7 @@ const navItems = [
   { label: 'About Us', path: '/about' },
   { label: 'Services', path: '/services' },
   { label: 'Solutions', path: '/solutions' },
+  { label: 'Technical Events', path: '/events' },
   { label: 'Funding & Grants', path: '/funding-grants' },
   { label: 'Tech Innovation', path: '/tech-innovation' },
   { label: 'Careers', path: '/careers' },
