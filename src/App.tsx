@@ -30,6 +30,7 @@ import GSAI from "./pages/conferences/GSAI";
 import WCCC from "./pages/conferences/WCCC";
 import ICBT from "./pages/conferences/ICBT";
 import IDSS from "./pages/conferences/IDSS";
+import AdvisoryBoard from "./pages/AdvisoryBoard";
 import VideoConferenceView from "./pages/VideoConferenceView";
 import { ScrollToTop } from "./components/ScrollToTop";
 import NewMexicoBackground from "./components/NewMexicoBackground";
@@ -71,6 +72,7 @@ const App = () => (
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/advisory-board" element={<AdvisoryBoard />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           {/* <Route path="/proceedings/:id" element={<VideoConferenceView />} /> */}
           <Route path="*" element={<NotFound />} />
