@@ -13,7 +13,7 @@ const navItems = [
   // { label: 'Technical Events', path: '/events' },
   { label: 'Funding & Grants', path: '/funding-grants' },
   { label: 'Tech Innovation', path: '/tech-innovation' },
-  { label: 'Advisory Board', path: '/advisory-board' },
+  // { label: 'Advisory Board', path: '/advisory-board' },
   { label: 'Careers', path: '/careers' },
   { label: 'Contact', path: '/contact' },
 ];
