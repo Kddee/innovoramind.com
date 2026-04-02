@@ -21,9 +21,9 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
-import ICDMS26 from "./pages/conferences/ICDMS26";
+// import ICDMS26 from "./pages/conferences/ICDMS26";
 import Careers from "./pages/Careers";
-import Events from "./pages/Events";
+// import Events from "./pages/Events";
 import GASS from "./pages/conferences/GASS";
 import ICCSD from "./pages/conferences/ICCSD";
 import GSAI from "./pages/conferences/GSAI";
@@ -58,14 +58,14 @@ const App = () => (
           <Route path="/tech-innovation" element={<TechInnovation />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/conferences/icdms-26" element={<ICDMS26 />} />
-          <Route path="/events" element={<Events />} />
+          {/* <Route path="/conferences/icdms-26" element={<ICDMS26 />} /> */}
+          {/* <Route path="/events" element={<Events />} />
           <Route path="/events/gass" element={<GASS />} />
           <Route path="/events/iccsd" element={<ICCSD />} />
           <Route path="/events/gsai" element={<GSAI />} />
           <Route path="/events/wccc" element={<WCCC />} />
           <Route path="/events/icbt" element={<ICBT />} />
-          <Route path="/events/idss" element={<IDSS />} />
+          <Route path="/events/idss" element={<IDSS />} /> */}
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/services" element={<Services />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
