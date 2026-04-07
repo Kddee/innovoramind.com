@@ -158,6 +158,16 @@ const serviceCategories = [
                 ],
             },
             {
+                icon: Shield,
+                title: 'Autonomous Cybersecurity Assistance',
+                description: 'Deploy AI-driven autonomous cybersecurity agents that actively monitor, detect, and neutralize threats 24/7 without manual intervention.',
+                features: [
+                    '24/7 autonomous threat monitoring',
+                    'Real-time automated incident response',
+                    'Proactive vulnerability management'
+                ],
+            },
+            {
                 icon: ClipboardCheck,
                 title: 'Compliance Automation',
                 description: 'We help organizations meet regulatory requirements through automated compliance workflows.',

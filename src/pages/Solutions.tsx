@@ -45,8 +45,8 @@ const solutions = [
     {
         icon: Shield,
         title: 'Cybersecurity Solutions',
-        description: 'Comprehensive security audits, threat detection, and mitigation strategies to protect your intellectual property and sensitive data.',
-        features: ['Network Security Audits', 'Cloud Security Posture', 'Identity Access Management', 'Compliance & Risk Management'],
+        description: 'Comprehensive security audits, threat detection, and mitigation strategies to protect your intellectual property. We also offer entirely autonomous cybersecurity assistance.',
+        features: ['Network Security Audits', 'Cloud Security Posture', 'Autonomous Security Assistance', 'IAM & Compliance'],
         image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop',
         gradient: 'from-rose-600 to-pink-500'
     },
