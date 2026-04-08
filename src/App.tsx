@@ -23,6 +23,8 @@ import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 // import ICDMS26 from "./pages/conferences/ICDMS26";
 import Careers from "./pages/Careers";
+import Developers from "./pages/Developers";
+import Documentation from "./pages/Documentation";
 // import Events from "./pages/Events";
 import GASS from "./pages/conferences/GASS";
 import ICCSD from "./pages/conferences/ICCSD";
@@ -72,6 +74,8 @@ const App = () => (
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/developers" element={<Developers />} />
+          <Route path="/documentation" element={<Documentation />} />
           {/* <Route path="/advisory-board" element={<AdvisoryBoard />} /> */}
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           {/* <Route path="/proceedings/:id" element={<VideoConferenceView />} /> */}

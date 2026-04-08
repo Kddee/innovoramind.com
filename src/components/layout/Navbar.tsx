@@ -15,6 +15,7 @@ const navItems = [
   { label: 'Tech Innovation', path: '/tech-innovation' },
   // { label: 'Advisory Board', path: '/advisory-board' },
   { label: 'Careers', path: '/careers' },
+  { label: 'Developers', path: '/developers' },
   { label: 'Contact', path: '/contact' },
 ];
 
