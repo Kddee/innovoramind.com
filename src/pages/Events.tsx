@@ -5,54 +5,15 @@ import { Calendar, MapPin, Video, ArrowRight, MonitorPlay, Cpu, Code, Shield, Cl
 
 const conferences = [
   {
-    id: "iccsd",
-    title: "International Conference on Cyber Security & Defense (ICCSD)",
-    shortDesc: "Securing the Future: Resilience, Strategies, and Innovations in Digital Defense.",
-    tag: "Cyber Security",
-    date: "April 19, 2026",
-    location: "Location TBA",
-    mode: "Hybrid Mode",
-    icon: Shield,
-  },
-  {
-    id: "gsai",
-    title: "Global Summit on Artificial Intelligence (GSAI)",
-    shortDesc: "Unveiling the Next Era of Generative AI, Machine Learning, and Neural Networks.",
-    tag: "Artificial Intelligence",
-    date: "May 17, 2026",
-    location: "Location TBA",
-    mode: "Hybrid Mode",
-    icon: Cpu,
-  },
-  {
-    id: "wccc",
-    title: "World Cloud Computing Congress (WCCC)",
-    shortDesc: "Building Scalable Infrastructures and Next-Gen Serverless Architectures.",
-    tag: "Cloud Computing",
-    date: "June 21, 2026",
-    location: "Location TBA",
-    mode: "Hybrid Mode",
-    icon: Cloud,
-  },
-  {
-    id: "icbt",
-    title: "International Conference on Blockchain Technologies (ICBT)",
-    shortDesc: "Decentralized Systems, Smart Contracts, and the Web3 Revolution.",
-    tag: "Blockchain & Web3",
-    date: "July 19, 2026",
-    location: "Location TBA",
-    mode: "Hybrid Mode",
+    id: "hackathon-2026",
+    title: "Nexus 2026",
+    shortDesc: "A Hackathon focusing on exciting projects on the combination of various domains like AI, Data Science, Cloud, Cybersecurity, and Machine Learning.",
+    tag: "Hackathon",
+    date: "April 26, 2026",
+    location: "Online",
+    mode: "Virtual",
     icon: Code,
-  },
-  {
-    id: "idss",
-    title: "International Data Science Summit (IDSS)",
-    shortDesc: "Harnessing Analytics, Predictive Modeling, and Data Engineering At Scale.",
-    tag: "Data Science & Big Data",
-    date: "August 16, 2026",
-    location: "Location TBA",
-    mode: "Hybrid Mode",
-    icon: Database,
+    registrationLink: "https://docs.google.com/forms/placeholder",
   }
 ];
 
@@ -74,7 +35,7 @@ const Events = () => {
             className="max-w-4xl mx-auto"
           >
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
-              Technical <span className="text-gradient">Events</span>
+              Our <span className="text-gradient">Events</span>
             </h1>
             <p className="text-xl sm:text-2xl text-primary-foreground/80 font-medium">
               Join us for industry-leading conferences, summits, and technical workshops
@@ -116,12 +77,12 @@ const Events = () => {
                     <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,transparent,black)]" />
                     <Icon className="w-20 h-20 text-secondary/40 group-hover:scale-110 transition-transform duration-500" />
                     <div className="absolute top-4 left-4">
-                       <span className="inline-flex items-center rounded-full border border-secondary/30 bg-secondary/10 px-2.5 py-0.5 text-xs font-semibold text-secondary backdrop-blur-md">
+                      <span className="inline-flex items-center rounded-full border border-secondary/30 bg-secondary/10 px-2.5 py-0.5 text-xs font-semibold text-secondary backdrop-blur-md">
                         {conf.tag}
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="p-6 flex flex-col flex-grow">
                     <div className="mb-4">
                       <div className="flex justify-between items-start mb-2">
@@ -129,7 +90,7 @@ const Events = () => {
                           {conf.title}
                         </h3>
                       </div>
-                      <p className="text-sm text-muted-foreground line-clamp-2">
+                      <p className="text-sm text-muted-foreground">
                         {conf.shortDesc}
                       </p>
                     </div>
@@ -149,13 +110,25 @@ const Events = () => {
                       </div>
                     </div>
 
-                    <Link
-                      to={`/events/${conf.id}`}
-                      className="inline-flex items-center justify-center w-full rounded-xl bg-secondary px-4 py-2.5 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-secondary/90 transition-colors"
-                    >
-                      View Details
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Link>
+                    {conf.registrationLink ? (
+                      <a
+                        href={conf.registrationLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-full rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 transition-colors"
+                      >
+                        Register Now
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </a>
+                    ) : (
+                      <Link
+                        to={`/events/${conf.id}`}
+                        className="inline-flex items-center justify-center w-full rounded-xl bg-secondary px-4 py-2.5 text-sm font-semibold text-secondary-foreground shadow-sm hover:bg-secondary/90 transition-colors"
+                      >
+                        View Details
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </Link>
+                    )}
                   </div>
                 </motion.div>
               );
