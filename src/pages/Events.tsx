@@ -54,10 +54,10 @@ const Events = () => {
             className="mb-12"
           >
             <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-              Featured Conferences
+              Featured Events
             </h2>
             <p className="text-muted-foreground max-w-2xl">
-              Discover our upcoming conferences focused on pushing the boundaries of technology, artificial intelligence, cyber security, and more.
+              Discover our upcoming events focused on pushing the boundaries of technology, artificial intelligence, cyber security, and more.
             </p>
           </motion.div>
 
