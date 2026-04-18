@@ -27,6 +27,7 @@ import Developers from "./pages/Developers";
 import Documentation from "./pages/Documentation";
 import Events from "./pages/Events";
 import GASS from "./pages/conferences/GASS";
+import Nexus2026 from "./pages/conferences/Nexus2026";
 import ICCSD from "./pages/conferences/ICCSD";
 import GSAI from "./pages/conferences/GSAI";
 import WCCC from "./pages/conferences/WCCC";
@@ -69,6 +70,7 @@ const App = () => (
           <Route path="/events/wccc" element={<WCCC />} />
           <Route path="/events/icbt" element={<ICBT />} />
           <Route path="/events/idss" element={<IDSS />} />
+          <Route path="/events/hackathon-2026" element={<Nexus2026 />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/services" element={<Services />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

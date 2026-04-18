@@ -1,9 +1,22 @@
 import { motion } from 'framer-motion';
 import { Layout } from '@/components/layout/Layout';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Video, ArrowRight, MonitorPlay, Cpu, Code, Shield, Cloud, Database } from 'lucide-react';
+import { Calendar, MapPin, Video, ArrowRight, Code } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
-const conferences = [
+interface Conference {
+  id: string;
+  title: string;
+  shortDesc: string;
+  tag: string;
+  date: string;
+  location: string;
+  mode: string;
+  icon: LucideIcon;
+  registrationLink?: string;
+}
+
+const conferences: Conference[] = [
   {
     id: "hackathon-2026",
     title: "Nexus 2026",
@@ -12,8 +25,7 @@ const conferences = [
     date: "April 26, 2026",
     location: "Online",
     mode: "Virtual",
-    icon: Code,
-    registrationLink: "https://docs.google.com/forms/placeholder",
+    icon: Code
   }
 ];
 
