@@ -1,18 +1,18 @@
 import { motion } from 'framer-motion';
 import { Layout } from '@/components/layout/Layout';
 import {
-  Calendar, MapPin, Video, Code, Shield, Cloud, Component, CheckCircle2, Trophy, Crosshair, ClipboardList, Target, Award, ExternalLink
+  Calendar, MapPin, Video, MessageCircle, Shield, Brain, Scale, Users, CheckCircle2, Lightbulb, ClipboardList, Target, ExternalLink
 } from 'lucide-react';
 
-const Nexus2026 = () => {
+const EthicsOfAGI = () => {
   return (
     <Layout>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center justify-center min-h-[70vh]">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=2070"
-            alt="Hackathon Background"
+            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=2070"
+            alt="AI Ethics Background"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-950/85 bg-gradient-to-t from-slate-950 via-slate-950/70 flex items-center"></div>
@@ -26,25 +26,29 @@ const Nexus2026 = () => {
             className="max-w-4xl mx-auto"
           >
             <div className="inline-flex items-center rounded-full border border-secondary/50 bg-secondary/20 px-4 py-1.5 text-sm font-semibold text-secondary backdrop-blur-md mb-6">
-              <Code className="w-4 h-4 mr-2" />
-              Global Virtual Hackathon
+              <MessageCircle className="w-4 h-4 mr-2" />
+              Fireside Chat &middot; AMA Session
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-              Nexus <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">2026</span>
+              The Ethics of <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">AGI</span>
             </h1>
             <p className="text-xl sm:text-2xl text-slate-300 font-medium mb-10 leading-relaxed">
-              Join the ultimate convergence of AI, Data Science, Cloud, Cybersecurity, and Machine Learning.
+              An exclusive, unstructured Ask-Me-Anything session with leading AI safety researchers.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Calendar className="w-5 h-5 text-secondary mr-3" />
-                <span className="text-white font-medium">June 7, 2026</span>
+                <span className="text-white font-medium">June 14, 2026</span>
               </div>
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Video className="w-5 h-5 text-primary mr-3" />
-                <span className="text-white font-medium">Virtual Event</span>
+                <span className="text-white font-medium">Hybrid Event</span>
+              </div>
+              <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
+                <MapPin className="w-5 h-5 text-accent mr-3" />
+                <span className="text-white font-medium">Online</span>
               </div>
             </div>
           </motion.div>
@@ -66,20 +70,20 @@ const Nexus2026 = () => {
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-1 bg-secondary rounded-full"></div>
-                  <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">About the Hackathon</h2>
+                  <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">About the Session</h2>
                 </div>
 
                 <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground mt-8 text-justify">
                   <p className="text-xl leading-relaxed mb-6 font-medium text-foreground/80">
-                    Nexus 2026 is a premier virtual hackathon designed to push the limits of technology across various high-impact domains.
+                    As we inch closer to Artificial General Intelligence, the questions we need to answer aren't just technical — they are deeply philosophical and ethical.
                   </p>
                   <p>
-                    We are bringing together the brightest minds, from enthusiastic students to seasoned professionals, to develop innovative solutions that bridge Artificial Intelligence, Data Science, Cloud Computing, Cybersecurity, and Machine Learning. Participants will have the opportunity to collaborate, mentored by industry experts, and showcase their groundbreaking projects to a global audience.
+                    This fireside chat brings together leading AI safety researchers, ethicists, and policy experts for an open, unstructured conversation. There are no prepared slides — just honest dialogue about the guardrails, governance frameworks, and moral responsibilities required as we build systems that could surpass human intelligence. This is your chance to ask the hard questions directly to the people working on the answers.
                   </p>
                 </div>
               </motion.div>
 
-              {/* Objective Section */}
+              {/* Key Topics Section */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -87,13 +91,28 @@ const Nexus2026 = () => {
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-1 bg-primary rounded-full"></div>
-                  <h2 className="font-display text-3xl font-bold text-foreground">Objective</h2>
+                  <h2 className="font-display text-3xl font-bold text-foreground">Key Topics</h2>
                 </div>
                 <div className="bg-card border border-border p-8 rounded-3xl mt-8">
                   <Target className="w-12 h-12 text-primary mb-6" />
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    Our objective is to foster a collaborative and competitive environment that sparks innovation. By challenging participants to integrate multiple disciplines such as applying AI to cybersecurity models or scaling data science algorithms on the cloud;we aim to generate practical, forward-thinking solutions that address real-world technological challenges.
+                  <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                    The conversation will organically cover a wide range of critical themes, including but not limited to:
                   </p>
+                  <ul className="space-y-3">
+                    {[
+                      "Alignment problem — ensuring AGI acts in humanity's best interest",
+                      "Existential risk assessment and mitigation strategies",
+                      "Global governance and regulatory frameworks for advanced AI",
+                      "The role of open-source vs. closed-source in AGI development",
+                      "Bias, fairness, and equitable access to AGI technologies",
+                      "Human-AI collaboration and augmentation vs. replacement"
+                    ].map((topic, idx) => (
+                      <li key={idx} className="flex items-start text-muted-foreground">
+                        <CheckCircle2 className="w-5 h-5 text-secondary mr-3 mt-0.5 shrink-0" />
+                        <span>{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
 
@@ -110,12 +129,12 @@ const Nexus2026 = () => {
 
                 <div className="space-y-6 mt-8">
                   {[
-                    { time: "09:00 AM", title: "Opening Ceremony & Keynote", desc: "Welcome address and unveiling of problem statements." },
-                    { time: "10:00 AM", title: "Hacking Begins", desc: "Teams commence brainstorming and initial coding." },
-                    { time: "02:00 PM", title: "Mentor Check-in Round 1", desc: "Feedback sessions with domain experts." },
-                    { time: "06:00 PM", title: "Mid-way Progress Evaluation", desc: "Quick demonstrations of conceptual prototypes." },
-                    { time: "11:59 PM", title: "Final Project Submission", desc: "Code freeze and submission of presentation materials." },
-                    { time: "Next Day", title: "Judging & Closing Ceremony", desc: "Live project pitches and announcement of award winners." },
+                    { time: "06:00 PM", title: "Welcome & Introductions", desc: "Meet the panelists and set the context for the evening's conversation." },
+                    { time: "06:20 PM", title: "Opening Reflections", desc: "Each panelist shares their most pressing concern about AGI development today." },
+                    { time: "06:45 PM", title: "Open AMA — Round 1", desc: "Audience submits and upvotes questions. The most voted topics are discussed first." },
+                    { time: "07:30 PM", title: "Deep Dive: The Alignment Problem", desc: "A focused 20-minute discussion on the single hardest technical challenge in AI safety." },
+                    { time: "08:00 PM", title: "Open AMA — Round 2", desc: "Free-form questions from the live audience, no topic off-limits." },
+                    { time: "08:30 PM", title: "Closing Thoughts & Takeaways", desc: "Each panelist shares one actionable insight for the audience to carry forward." },
                   ].map((item, index) => (
                     <div key={index} className="flex flex-col sm:flex-row sm:items-center bg-card p-4 rounded-2xl border border-border/50 shadow-sm hover:border-accent/50 transition-colors">
                       <div className="bg-accent/10 text-accent font-bold px-4 py-2 rounded-xl sm:w-40 text-center mb-4 sm:mb-0 sm:mr-6">
@@ -130,7 +149,7 @@ const Nexus2026 = () => {
                 </div>
               </motion.div>
 
-              {/* Evaluation Criteria Section */}
+              {/* Format Section */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -138,15 +157,15 @@ const Nexus2026 = () => {
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-1 bg-emerald-500 rounded-full"></div>
-                  <h2 className="font-display text-3xl font-bold text-foreground">Evaluation Criteria</h2>
+                  <h2 className="font-display text-3xl font-bold text-foreground">Discussion Format</h2>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6 mt-8">
                   {[
-                    { icon: Component, title: "Innovation", desc: "Originality of the idea and creative approach to solving the problem." },
-                    { icon: Code, title: "Technical Complexity", desc: "Depth of technical execution and proper use of multi-domain technologies." },
-                    { icon: Shield, title: "Real-world Applicability", desc: "How well the solution addresses practical, real-world industry challenges." },
-                    { icon: ClipboardList, title: "Presentation & UI", desc: "Clarity of the pitch, UI design, and user experience of the final prototype." }
+                    { icon: MessageCircle, title: "Open AMA", desc: "No pre-curated questions. The audience drives the conversation with real-time upvoting." },
+                    { icon: Users, title: "Panel of Experts", desc: "4–5 leading researchers from AI safety labs, academia, and policy organizations." },
+                    { icon: Scale, title: "Balanced Perspectives", desc: "Deliberately diverse viewpoints — optimists, cautious voices, and pragmatists." },
+                    { icon: Lightbulb, title: "Actionable Takeaways", desc: "Every session ends with concrete recommendations attendees can act on." }
                   ].map((crit, idx) => (
                     <div key={idx} className="bg-background border border-border p-6 rounded-2xl">
                       <crit.icon className="w-8 h-8 text-emerald-500 mb-4" />
@@ -175,17 +194,17 @@ const Nexus2026 = () => {
                 </div>
 
                 <p className="text-sm text-muted-foreground mb-6">
-                  Ready to innovate? Join Nexus 2026. Choose your role below to complete your registration.
+                  Reserve your seat for this thought-provoking fireside chat. Space is limited — register now to secure your spot.
                 </p>
 
                 <div className="space-y-4 mb-8">
                   <a
-                    href="https://forms.gle/ZYx7Hvx5dirdZqa16"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center rounded-xl bg-gradient-to-r from-secondary to-accent px-4 py-4 text-sm font-bold text-white shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all"
                   >
-                    Participant Registration
+                    Register as Attendee
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
 
@@ -196,12 +215,12 @@ const Nexus2026 = () => {
                   </div>
 
                   <a
-                    href="https://forms.gle/A7HTtihp7mNXRG9y8"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center rounded-xl bg-muted border border-border px-4 py-4 text-sm font-bold text-foreground hover:bg-muted/80 transition-all"
                   >
-                    Judge Registration
+                    Speaker Registration
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </a>
                 </div>
@@ -211,13 +230,13 @@ const Nexus2026 = () => {
                     <Calendar className="w-4 h-4 mr-2 text-primary" />
                     Deadline
                   </div>
-                  <p className="text-xs text-muted-foreground">Registration closes on June 6, 2026.</p>
+                  <p className="text-xs text-muted-foreground">Registration closes on June 11, 2026.</p>
                 </div>
               </motion.div>
             </div>
           </div>
 
-          {/* Awards and Recognition Section */}
+          {/* What You'll Gain Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -226,22 +245,22 @@ const Nexus2026 = () => {
           >
             <div className="flex items-center space-x-4 mb-10">
               <div className="w-12 h-1 bg-yellow-500 rounded-full"></div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Awards and Recognition</h2>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">What You'll Gain</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: "Global Research Excellence Award", desc: "Awarded to the team showcasing the most profound research-driven project integrating multiple cutting-edge domains." },
-                { title: "Innovation Leadership Award", desc: "Recognizes the solution with the highest potential for commercial scalability and industry impact." },
-                { title: "Young Researcher Award", desc: "A special prize dedicated to outstanding students and early-career professionals exhibiting exceptional talent." },
-                { title: "People’s Choice Award", desc: "Selected entirely through live audience voting during the final demonstration and pitch session." }
-              ].map((award, index) => (
+                { title: "Clarity on AGI Risks", desc: "Understand the real risks — and the hype — surrounding Artificial General Intelligence from those closest to the research." },
+                { title: "Policy Insights", desc: "Learn about the latest global regulatory efforts and what they mean for developers and organizations building AI." },
+                { title: "Networking", desc: "Connect with like-minded professionals, researchers, and policymakers passionate about responsible AI development." },
+                { title: "Actionable Framework", desc: "Walk away with a practical ethical checklist you can apply to your own AI projects immediately." }
+              ].map((item, index) => (
                 <div key={index} className="bg-gradient-to-br from-background to-muted border border-border/50 p-6 rounded-2xl hover:border-yellow-500/30 hover:shadow-lg hover:-translate-y-1 transition-all">
                   <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center mb-4">
-                    <Trophy className="w-6 h-6 text-yellow-500" />
+                    <Brain className="w-6 h-6 text-yellow-500" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">{award.title}</h3>
-                  <p className="text-sm text-muted-foreground">{award.desc}</p>
+                  <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -253,4 +272,4 @@ const Nexus2026 = () => {
   );
 };
 
-export default Nexus2026;
+export default EthicsOfAGI;

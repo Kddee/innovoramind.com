@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Layout } from '@/components/layout/Layout';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Video, ArrowRight, Code } from 'lucide-react';
+import { Calendar, MapPin, Video, ArrowRight, Code, MessageCircle, Layers } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface Conference {
@@ -22,10 +22,30 @@ const conferences: Conference[] = [
     title: "Nexus 2026",
     shortDesc: "A Hackathon focusing on exciting projects on the combination of various domains like AI, Data Science, Cloud, Cybersecurity, and Machine Learning.",
     tag: "Hackathon",
-    date: "April 26, 2026",
+    date: "June 7, 2026",
     location: "Online",
     mode: "Virtual",
     icon: Code
+  },
+  {
+    id: "fireside-chat-agi-ethics",
+    title: "The Ethics of AGI",
+    shortDesc: "An exclusive, unstructured Ask-Me-Anything (AMA) session with leading AI safety researchers. Dive deep into the philosophical and technical guardrails needed for Artificial General Intelligence.",
+    tag: "Fireside Chat",
+    date: "June 14, 2026",
+    location: "Online",
+    mode: "Hybrid",
+    icon: MessageCircle
+  },
+  {
+    id: "design-sprint-spatial-ux",
+    title: "UX for Spatial Computing",
+    shortDesc: "Step away from the code. This rapid-prototyping sprint focuses purely on user experience, 3D interfaces, and accessibility for the next generation of AR/VR applications.",
+    tag: "Design Sprint",
+    date: "June 28, 2026",
+    location: "Online",
+    mode: "Hybrid",
+    icon: Layers
   }
 ];
 
