@@ -44,7 +44,7 @@ const EthicsOfAGI = () => {
               </div>
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <Video className="w-5 h-5 text-primary mr-3" />
-                <span className="text-white font-medium">Hybrid Event</span>
+                <span className="text-white font-medium">Virtual Event</span>
               </div>
               <div className="flex items-center px-5 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
                 <MapPin className="w-5 h-5 text-accent mr-3" />

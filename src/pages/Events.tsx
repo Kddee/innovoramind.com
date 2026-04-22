@@ -34,7 +34,7 @@ const conferences: Conference[] = [
     tag: "Fireside Chat",
     date: "June 14, 2026",
     location: "Online",
-    mode: "Hybrid",
+    mode: "Virtual",
     icon: MessageCircle
   },
   {
@@ -44,7 +44,7 @@ const conferences: Conference[] = [
     tag: "Design Sprint",
     date: "June 28, 2026",
     location: "Online",
-    mode: "Hybrid",
+    mode: "Virtual",
     icon: Layers
   }
 ];
