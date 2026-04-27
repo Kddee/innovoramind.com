@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Layout } from '@/components/layout/Layout';
 import {
-  Calendar, MapPin, Video, Code, Shield, Cloud, Component, CheckCircle2, Trophy, Crosshair, ClipboardList, Target, Award, ExternalLink, Users
+  Calendar, MapPin, Video, Code, Shield, Cloud, Component, CheckCircle2, Trophy, Crosshair, ClipboardList, Target, Award, ExternalLink, Users, User
 } from 'lucide-react';
 
 const expertsData = [
@@ -134,6 +134,37 @@ const expertsData = [
     "name": "Emem Akpabio",
     "designation": "N/A",
     "country": "N/A"
+  }
+];
+
+const judgesData = [
+  {
+    name: "Taleb Hammad",
+    organisation: "EyesNY",
+    designation: "DBA / executive director",
+    country: "USA",
+    image: "/images/judges/taleb.png"
+  },
+  {
+    name: "Tamar Makharoblidze",
+    organisation: "School Of Arts and Sciences Ilai State University.",
+    designation: "Professor",
+    country: "Georgia",
+    image: "/images/judges/tamar.png"
+  },
+  {
+    name: "Okopi Fredrick",
+    organisation: "Unique UJ SERVICE LIMITES",
+    designation: "CEO",
+    country: "Nigeria",
+    image: "/images/judges/okopi.png"
+  },
+  {
+    name: "Marghescu Cristina-Florentina",
+    organisation: "University Politehnica of Bucharest (UPB)",
+    designation: "PhD Researcher in Mathematics",
+    country: "Romania",
+    image: "/images/judges/cristina.jpeg"
   }
 ];
 
@@ -376,6 +407,45 @@ const Nexus2026 = () => {
                   )}
                   {expert.designation !== "N/A" && (
                     <p className="text-sm text-muted-foreground flex-grow leading-relaxed">{expert.designation}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Judges Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-pink-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Panel of Judges</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {judgesData.map((judge, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-pink-500/50 hover:shadow-lg transition-all flex flex-col items-center text-center h-full">
+                  <div className="w-24 h-24 rounded-full bg-muted border border-border flex items-center justify-center mb-4 overflow-hidden shadow-sm">
+                    {judge.image ? (
+                      <img src={judge.image} alt={judge.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <User className="w-8 h-8 text-muted-foreground/50" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{judge.name}</h3>
+                  {judge.designation && (
+                    <p className="text-sm font-medium text-pink-500 mb-1">{judge.designation}</p>
+                  )}
+                  {judge.organisation && (
+                    <p className="text-sm text-muted-foreground mb-3 leading-relaxed flex-grow">{judge.organisation}</p>
+                  )}
+                  {judge.country && (
+                    <div className="flex items-center justify-center text-sm font-medium text-pink-500/80 mt-auto w-full pt-3 border-t border-border/50">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {judge.country}
+                    </div>
                   )}
                 </div>
               ))}
