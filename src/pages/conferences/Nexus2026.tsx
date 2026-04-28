@@ -69,71 +69,6 @@ const expertsData = [
     "name": "Halima ALMaktoumi",
     "designation": "Sohar University, Academic Research & Higher Education",
     "country": "Oman"
-  },
-  {
-    "name": "Dr. Zoha Rahman",
-    "designation": "Founder & Country Director",
-    "country": "USA"
-  },
-  {
-    "name": "Dr. Dina A. Alkhodary",
-    "designation": "Associate Professor",
-    "country": "Jordan"
-  },
-  {
-    "name": "Dr. Firas Zeidan",
-    "designation": "Researcher & Professor",
-    "country": "Lebanon"
-  },
-  {
-    "name": "Dr. Walida Ounruean",
-    "designation": "Faculty of Education",
-    "country": "Thailand"
-  },
-  {
-    "name": "Dr. Tiansheng Yang",
-    "designation": "University of South Wales",
-    "country": "UK"
-  },
-  {
-    "name": "Mouhsine Ait El Mouden",
-    "designation": "Researcher",
-    "country": "Morocco"
-  },
-  {
-    "name": "Sam Lawe",
-    "designation": "Infrastructure Manager",
-    "country": "New Zealand"
-  },
-  {
-    "name": "Meryem Gurel",
-    "designation": "Founder",
-    "country": "Turkey"
-  },
-  {
-    "name": "Dr. Ruth Abiola Adimula",
-    "designation": "Associate Professor",
-    "country": "Nigeria"
-  },
-  {
-    "name": "Hemang Upadhyay",
-    "designation": "Independent Researcher AI, E-commerce & Analytics",
-    "country": "USA"
-  },
-  {
-    "name": "Lawrence Mazaki Mashati",
-    "designation": "Community Development Professional, International Missionary for Christ Kenya (IMFC)",
-    "country": "Kenya"
-  },
-  {
-    "name": "Dr. Yulia Kryvenko",
-    "designation": "Assistant Professor Istanbul Sabahattin Zaim University",
-    "country": "France"
-  },
-  {
-    "name": "Emem Akpabio",
-    "designation": "N/A",
-    "country": "N/A"
   }
 ];
 
@@ -151,13 +86,6 @@ const judgesData = [
     designation: "Professor",
     country: "Georgia",
     image: "/images/judges/tamar.png"
-  },
-  {
-    name: "Okopi Fredrick",
-    organisation: "Unique UJ SERVICE LIMITES",
-    designation: "CEO",
-    country: "Nigeria",
-    image: "/images/judges/okopi.png"
   },
   {
     name: "Marghescu Cristina-Florentina",
@@ -381,38 +309,6 @@ const Nexus2026 = () => {
             </div>
           </div>
 
-          {/* Experts Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="flex items-center space-x-4 mb-10">
-              <div className="w-12 h-1 bg-purple-500 rounded-full"></div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Meet our distinguished experts</h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {expertsData.map((expert, index) => (
-                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-purple-500/50 hover:shadow-lg transition-all flex flex-col h-full">
-                  <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mb-4">
-                    <Users className="w-6 h-6 text-purple-500" />
-                  </div>
-                  <h3 className="text-lg font-bold mb-2 text-foreground">{expert.name}</h3>
-                  {expert.country !== "N/A" && (
-                    <div className="flex items-center text-sm font-medium text-purple-500/80 mb-2">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      {expert.country}
-                    </div>
-                  )}
-                  {expert.designation !== "N/A" && (
-                    <p className="text-sm text-muted-foreground flex-grow leading-relaxed">{expert.designation}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
           {/* Judges Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -446,6 +342,38 @@ const Nexus2026 = () => {
                       <MapPin className="w-4 h-4 mr-1" />
                       {judge.country}
                     </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Experts Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center space-x-4 mb-10">
+              <div className="w-12 h-1 bg-purple-500 rounded-full"></div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Meet our distinguished experts</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {expertsData.map((expert, index) => (
+                <div key={index} className="bg-card border border-border p-6 rounded-2xl hover:border-purple-500/50 hover:shadow-lg transition-all flex flex-col h-full">
+                  <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mb-4">
+                    <Users className="w-6 h-6 text-purple-500" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-foreground">{expert.name}</h3>
+                  {expert.country !== "N/A" && (
+                    <div className="flex items-center text-sm font-medium text-purple-500/80 mb-2">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {expert.country}
+                    </div>
+                  )}
+                  {expert.designation !== "N/A" && (
+                    <p className="text-sm text-muted-foreground flex-grow leading-relaxed">{expert.designation}</p>
                   )}
                 </div>
               ))}
